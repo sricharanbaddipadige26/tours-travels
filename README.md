@@ -101,3 +101,7 @@ This project is developed for educational and demonstration purposes.
 ---
 
 ⭐ If you like this project, don't forget to star the repository!
+
+## Project Demo
+demo video 
+https://drive.google.com/file/d/1Zdx_ZoqycOnJ5FQQhHEBPhj1nrynDuBk/view?usp=drive_link
