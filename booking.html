@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Car</title>
+<a href="https://wa.me/918309842324?text=Hello%20Shikara%20Tours%20&%20Travels,%20I%20want%20to%20book%20your%20Swift%20Dzire." class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+🚗 Shikara Tours & Travels
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="pricing.html">Pricing</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="booking">
+
+<h2>test-Book Your Swift Dzire</h2>
+
+<form id="bookingForm">
+
+<input type="text" id="name"
+placeholder="Full Name"
+required>
+
+<input type="tel" id="phone"
+placeholder="Phone Number"
+required>
+
+<label>Pickup Date</label>
+
+<input type="date" id="pickupDate"
+required>
+
+<label>Return Date</label>
+
+<input type="date" id="returnDate"
+required>
+
+<input type="text" id="pickupLocation"
+placeholder="Pickup Location"
+required>
+
+<textarea id="specialRequest"
+placeholder="Special Request"
+rows="4"></textarea>
+
+<button type="submit">
+Book Now
+</button>
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Shikara Tours & Travels</p>
+
+</footer>
+
+<script>
+const bookingForm = document.getElementById("bookingForm");
+
+bookingForm.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const pickupDate = document.getElementById("pickupDate").value;
+    const returnDate = document.getElementById("returnDate").value;
+    const pickupLocation = document.getElementById("pickupLocation").value;
+    const specialRequest = document.getElementById("specialRequest").value;
+
+    const message =
+`🚗 New Booking Request
+
+👤 Name: ${name}
+📞 Phone: ${phone}
+📅 Pickup Date: ${pickupDate}
+📅 Return Date: ${returnDate}
+📍 Pickup Location: ${pickupLocation}
+📝 Special Request: ${specialRequest}`;
+
+    const whatsappNumber = "918309842324";
+
+    const whatsappURL =
+        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+
+});
+</script>
+
+</body>
+</html>
